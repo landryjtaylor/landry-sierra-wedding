@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#ffffff; color-scheme: light;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>You're Invited</title>
+<meta property="og:title" content="Landry & Sierra — You're Invited">
+<meta property="og:description" content="Friday, September 11, 2026 · 6:00 PM · The Lyric in Loudon. RSVP here.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://landryjtaylor.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ivory: #FFFFFF;
+    --ink: #4A4A4A;
+    --ink-soft: #767676;
+    --gold: #FF8200;
+    --gold-light: #FFC58A;
+    --blush: #767676;
+    --line: rgba(255, 130, 0, 0.25);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overscroll-behavior: none;
+    color-scheme: light;
+    background: var(--ivory);
+    background-image:
+      radial-gradient(ellipse at top, rgba(255, 130, 0, 0.10), transparent 60%),
+      radial-gradient(ellipse at bottom, rgba(255, 130, 0, 0.06), transparent 60%);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ornament {
+    width: 120px;
+    height: auto;
+    margin-bottom: 18px;
+    opacity: 0.85;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: clamp(38px, 9vw, 52px);
+    line-height: 1.1;
+    margin: 0 0 6px;
+    text-align: center;
+    color: var(--ink);
+  }
+
+  .invite-sentence {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(20px, 4.6vw, 25px);
+    line-height: 1.5;
+    text-align: center;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+    max-width: 380px;
+  }
+
+  .invite-sentence .couple-names {
+    display: block;
+    font-size: clamp(34px, 8vw, 46px);
+    font-weight: 500;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .invite-sentence .amp-inline {
+    display: inline-block;
+    font-style: italic;
+    color: var(--gold);
+    margin: 0 10px;
+  }
+
+  .invite-sentence em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .amp {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.55em;
+    color: var(--blush);
+    margin: 2px 0;
+  }
+
+  .details {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+  }
+
+  .details .dot {
+    color: var(--gold);
+    margin: 0 8px;
+  }
+
+  .divider {
+    width: 100%;
+    max-width: 280px;
+    height: 24px;
+    margin: 36px 0;
+    opacity: 0.7;
+  }
+
+  .card {
+    width: 100%;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 36px 28px;
+    position: relative;
+    box-shadow: 0 24px 60px -32px rgba(31, 59, 44, 0.35);
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid var(--gold-light);
+    pointer-events: none;
+  }
+
+  .card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 28px;
+    color: var(--ink);
+  }
+
+  label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 4px;
+    border: none;
+    border-bottom: 1px solid var(--line);
+    background: transparent;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: var(--ink);
+    margin-bottom: 26px;
+    outline: none;
+    transition: border-color 0.25s ease;
+  }
+
+  input[type="text"]:focus {
+    border-bottom-color: var(--gold);
+  }
+
+  .choices {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .choice {
+    flex: 1;
+    padding: 14px 10px;
+    border: 1px solid var(--line);
+    background: transparent;
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+  }
+
+  .choice:hover { border-color: var(--gold); }
+
+  .choice.selected-yes {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: #fff;
+  }
+
+  .choice.selected-no {
+    background: #FFF4E8;
+    border-color: var(--gold);
+    color: var(--ink);
+  }
+
+  button.submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--gold);
+    border: none;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  button.submit:hover { background: var(--ink); }
+  button.submit:disabled { opacity: 0.5; cursor: not-allowed; }
+  button.submit:focus-visible, .choice:focus-visible, .toggle-link:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  .status {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 14px;
+    min-height: 18px;
+    color: var(--ink-soft);
+  }
+
+  .confirmed {
+    text-align: center;
+    padding: 20px 0 4px;
+  }
+
+  .seal {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    animation: stamp 0.5s cubic-bezier(0.2, 1.4, 0.4, 1);
+  }
+
+  @keyframes stamp {
+    0% { transform: scale(2.2); opacity: 0; }
+    60% { transform: scale(0.9); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+
+  .confirmed p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .toggle-link {
+    background: none;
+    border: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    cursor: pointer;
+    margin-top: 34px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .guestlist {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .counts {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .counts div .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: var(--ink);
+    display: block;
+  }
+
+  .counts div .lbl {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  ul.names {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 220px;
+    overflow-y: auto;
+    border-top: 1px solid var(--line);
+  }
+
+  ul.names li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 4px;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+  }
+
+  ul.names li span.tag {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  ul.names li.no span.tag { color: var(--ink-soft); }
+  ul.names li.yes span.tag { color: var(--gold); }
+
+  .empty-note {
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-soft);
+    padding: 12px 0;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .seal { animation: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <svg class="ornament" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M100 20 C 85 5, 60 5, 45 20 C 60 30, 85 30, 100 20 C 115 5, 140 5, 155 20 C 140 30, 115 30, 100 20 Z" stroke="#FF8200" stroke-width="1"/>
+    <circle cx="100" cy="20" r="3" fill="#4A4A4A"/>
+    <line x1="0" y1="20" x2="35" y2="20" stroke="#FF8200" stroke-width="1"/>
+    <line x1="165" y1="20" x2="200" y2="20" stroke="#FF8200" stroke-width="1"/>
+  </svg>
+
+  <div class="eyebrow">Together with their families</div>
+  <p class="invite-sentence">
+    <span class="couple-names">Landry Taylor<span class="amp-inline">&amp;</span>Sierra Brauns</span>
+    <em>finally</em> invite you to join our wedding celebration
+  </p>
+  <div class="details">Friday, September 11, 2026 · 6:00 PM</div>
+  <div class="details">The Lyric in Loudon<span class="dot">·</span>320 Grove St, Loudon, TN 37774</div>
+
+  <svg class="divider" viewBox="0 0 280 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="12" x2="110" y2="12" stroke="#FF8200" stroke-width="1"/>
+    <line x1="170" y1="12" x2="280" y2="12" stroke="#FF8200" stroke-width="1"/>
+    <path d="M130 12 L140 4 L150 12 L140 20 Z" stroke="#4A4A4A" stroke-width="1" fill="none"/>
+  </svg>
+
+  <div class="card">
+    <div id="formView">
+      <h2>Will you join us?</h2>
+      <div id="rsvpForm">
+        <label for="guestName">Your Name</label>
+        <input type="text" id="guestName" placeholder="First and last name" autocomplete="name">
+
+        <label for="partySize">Number in Your Party</label>
+        <input type="text" id="partySize" inputmode="numeric" placeholder="e.g. 2" autocomplete="off">
+
+        <label>Your Response</label>
+        <div class="choices">
+          <button type="button" class="choice" id="btnYes" data-value="yes">Joyfully&nbsp;Accept</button>
+          <button type="button" class="choice" id="btnNo" data-value="no">Regretfully&nbsp;Decline</button>
+        </div>
+
+        <button type="button" class="submit" id="submitBtn">Send RSVP</button>
+        <div class="status" id="statusMsg"></div>
+      </div>
+    </div>
+
+    <div id="confirmedView" style="display:none;">
+      <div class="confirmed">
+        <div class="seal">R</div>
+        <p id="confirmedText"></p>
+      </div>
+    </div>
+
+    <div style="text-align:center;">
+      <button class="toggle-link" id="toggleGuestlist">See who's celebrating</button>
+    </div>
+
+    <div class="guestlist" id="guestlistView" style="display:none;">
+      <div class="counts">
+        <div><span class="num" id="yesCount">0</span><span class="lbl">Attending</span></div>
+        <div><span class="num" id="noCount">0</span><span class="lbl">Can't make it</span></div>
+      </div>
+      <ul class="names" id="namesList"></ul>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const GAS_URL = 'https://script.google.com/macros/s/AKfycbyRlqtQ5uT9LK2jWLcEkLh3itF_j3KX6tXpNfRiRpKb6n0rZ4ZNy5k9_uMAcnfFgcgQ/exec';
+  let selected = null;
+
+  const btnYes = document.getElementById('btnYes');
+  const btnNo = document.getElementById('btnNo');
+  const submitBtn = document.getElementById('submitBtn');
+  const statusMsg = document.getElementById('statusMsg');
+  const nameInput = document.getElementById('guestName');
+  const toggleBtn = document.getElementById('toggleGuestlist');
+  const guestlistView = document.getElementById('guestlistView');
+
+  window.addEventListener('error', function (e) {
+    if (statusMsg) statusMsg.textContent = 'Script error: ' + e.message;
+  });
+
+  function selectChoice(value) {
+    selected = value;
+    btnYes.classList.toggle('selected-yes', value === 'yes');
+    btnNo.classList.toggle('selected-no', value === 'no');
+    statusMsg.textContent = '';
+  }
+
+  btnYes.addEventListener('click', () => selectChoice('yes'));
+  btnNo.addEventListener('click', () => selectChoice('no'));
+
+  async function loadRsvps() {
+    try {
+      const res = await fetch(GAS_URL);
+      const data = await res.json();
+      return Array.isArray(data) ? data : [];
+    } catch (e) {
+      statusMsg.textContent = 'Could not load guest list: ' + e.message;
+      return [];
+    }
+  }
+
+  async function saveRsvp(entry) {
+    try {
+      await fetch(GAS_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(entry)
+      });
+      return true;
+    } catch (e) {
+      statusMsg.textContent = 'Network error: ' + e.message;
+      return false;
+    }
+  }
+
+  submitBtn.addEventListener('click', async () => {
+    const name = nameInput.value.trim();
+
+    if (!name) {
+      statusMsg.textContent = 'Please enter your name.';
+      nameInput.focus();
+      return;
+    }
+    if (!selected) {
+      statusMsg.textContent = 'Please choose Accept or Decline above.';
+      return;
+    }
+
+    submitBtn.disabled = true;
+    statusMsg.textContent = 'Sending...';
+
+    const partySizeRaw = parseInt(document.getElementById('partySize').value, 10);
+    const partySize = (selected === 'yes' && partySizeRaw > 0) ? partySizeRaw : 1;
+    const entry = { name, attending: selected, partySize };
+    const ok = await saveRsvp(entry);
+
+    if (ok) {
+      document.getElementById('formView').style.display = 'none';
+      document.getElementById('confirmedView').style.display = 'block';
+      document.getElementById('confirmedText').textContent =
+        selected === 'yes'
+          ? `We can't wait to celebrate with you, ${name}.`
+          : `We'll miss you, ${name} — thank you for letting us know.`;
+      const list = await loadRsvps();
+      renderGuestlist(list);
+    } else {
+      submitBtn.disabled = false;
+    }
+  });
+
+  function renderGuestlist(list) {
+    const yesList = list.filter(r => r.attending === 'yes');
+    const noList = list.filter(r => r.attending === 'no');
+    const yesTotal = yesList.reduce((sum, r) => sum + (r.partySize || 1), 0);
+    document.getElementById('yesCount').textContent = yesTotal;
+    document.getElementById('noCount').textContent = noList.length;
+
+    const namesList = document.getElementById('namesList');
+    namesList.innerHTML = '';
+
+    if (list.length === 0) {
+      const li = document.createElement('div');
+      li.className = 'empty-note';
+      li.textContent = 'No responses yet — be the first to RSVP.';
+      namesList.appendChild(li);
+      return;
+    }
+
+    const sorted = [...list].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    sorted.forEach(r => {
+      const li = document.createElement('li');
+      li.className = r.attending;
+      const nameSpan = document.createElement('span');
+      nameSpan.textContent = r.attending === 'yes' && r.partySize > 1
+        ? `${r.name} (${r.partySize})`
+        : r.name;
+      const tagSpan = document.createElement('span');
+      tagSpan.className = 'tag';
+      tagSpan.textContent = r.attending === 'yes' ? 'Attending' : "Can't make it";
+      li.appendChild(nameSpan);
+      li.appendChild(tagSpan);
+      namesList.appendChild(li);
+    });
+  }
+
+  toggleBtn.addEventListener('click', async () => {
+    const isHidden = guestlistView.style.display === 'none';
+    if (isHidden) {
+      toggleBtn.textContent = 'Hide guest list';
+      const list = await loadRsvps();
+      renderGuestlist(list);
+      guestlistView.style.display = 'block';
+    } else {
+      toggleBtn.textContent = "See who's celebrating";
+      guestlistView.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
